@@ -7,13 +7,13 @@ Window::Window(const std::string& title) : title(title)
 	FPS = 60;
 	SetTargetFPS(60);
 }
-/*
+
 Window::Window(const std::string& title, const unsigned width, const unsigned height)
 			  : title{title}, width{width}, height{height}
 {
 	SetTargetFPS(60);
 }
-*/
+
 void Window::init(void)
 {
 	InitWindow(width, height, title.c_str());
