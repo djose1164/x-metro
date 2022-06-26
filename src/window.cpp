@@ -1,4 +1,4 @@
-#include "core.h"
+#include "window.h"
 #include <iostream>
 
 Window::Window(const std::string& title) : title(title)

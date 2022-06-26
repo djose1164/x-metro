@@ -1,5 +1,5 @@
 #include <iostream>
-#include "core.h"
+#include "window.h"
 
 #define APP_NAME "X-Metro Simulator"
 
