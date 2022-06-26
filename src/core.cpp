@@ -1,4 +1,5 @@
 #include "core.h"
+#include <iostream>
 
 Window::Window(const std::string& title) : title(title)
 {
@@ -22,4 +23,11 @@ void Window::init(void)
 void Window::close(void)
 {
 	CloseWindow();
+}
+
+Window::~Window()
+{
+	std::cout << "Deleting window...\n";
+	close();
+	std::cout << "Deleting window... Done!\n";
 }

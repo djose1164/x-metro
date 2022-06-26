@@ -19,6 +19,5 @@ int main(void)
 			DrawText(APP_NAME, 52, 80, 32, RED);
 		EndDrawing();
 	}
-	window.close();
 	return 0;
 }
