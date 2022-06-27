@@ -22,7 +22,16 @@ int main(void)
 		BeginDrawing();
 			ClearBackground(BLACK);
 			DrawText(APP_NAME, 52, 80, 32, RED);
-			camera.draw(nullptr);
+			
+			Vector3 cubePosition = {10.f, 10.f, 10.f};
+			//TraceLog(LOG_INFO, "Camera position {%.3f:%.3f:%.3f}", camera_.position.x, camera_.position.y, camera_.position.z);
+			BeginMode3D(camera.get_camera());
+				DrawText("Jose Daniel", 100, 150, 36, RED);
+				DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, RED);
+				DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, MAROON);
+				DrawGrid(10, 1.0f);
+			EndMode3D();
+					
 			DrawFPS(10, 10);
 		EndDrawing();
 	}

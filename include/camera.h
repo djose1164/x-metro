@@ -22,6 +22,10 @@ public:
 	XM_Camera(const Vector3 &pos, const Vector3 &target);
 	XM_Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up);
 	XM_Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up, const double flovy);
+	
+	Camera3D get_camera() const;
+
 	void draw(const void *todraw);
+
 	~XM_Camera();
 };
