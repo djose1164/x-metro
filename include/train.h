@@ -1,25 +1,24 @@
 #include <iostream>
+#include <raylib.h>
 
 class Train
 {
 private:
 	const std::string name;
 	const std::string type;
-	const unsigned width;
-	const unsigned height;
-	const unsigned lenght;
+	
+	const double width;
+	const double height;
+	const double lenght;
 	const unsigned horsepower;
 	
+	double distance;
+	double time;
+	Vector3 pos;
+	
 public:
-	Train(const std::string &name);
-	Train(const std::string &name, const std::string &type);
-	Train(const std::string &name, const std::string &type, const unsigned width);
 	Train(const std::string &name, const std::string &type, 
-		  const unsigned width, const unsigned height);
-	Train(const std::string &name, const std::string &type, 
-		  const unsigned width, const unsigned height, const unsigned lenght);
-	Train(const std::string &name, const std::string &type, 
-		  const unsigned width, const unsigned height, const unsigned lenght,
+		  const double width, const double height, const double lenght,
 		  const unsigned horsepower);
 	~Train();
 };
