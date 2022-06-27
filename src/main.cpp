@@ -23,6 +23,7 @@ int main(void)
 			ClearBackground(BLACK);
 			DrawText(APP_NAME, 52, 80, 32, RED);
 			camera.draw(nullptr);
+			DrawFPS(10, 10);
 		EndDrawing();
 	}
 	return 0;
