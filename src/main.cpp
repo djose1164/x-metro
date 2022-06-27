@@ -1,6 +1,8 @@
 #include <iostream>
 #include "window.h"
 #include "train.h"
+#include "camera.h"
+
 #define APP_NAME "X-Metro Simulator"
 
 int main(void)
@@ -11,6 +13,7 @@ int main(void)
 	std::string title = APP_NAME;
 	Window window(title);
 	window.init();
+	XM_Camera camera;
 	
 	Train train{"Maglev", "maglev-like", 12.5, 15.3, 123.4, 1500};
 	
@@ -19,6 +22,7 @@ int main(void)
 		BeginDrawing();
 			ClearBackground(BLACK);
 			DrawText(APP_NAME, 52, 80, 32, RED);
+			camera.draw(nullptr);
 		EndDrawing();
 	}
 	return 0;
