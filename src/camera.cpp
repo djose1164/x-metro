@@ -1,6 +1,6 @@
 #include "camera.h"
 
-XM_Camera::Camera() : pos{0, 0, 0}, target{0, 1.f, 0}, up{0, 1.f, 0}, fovy{45.f}
+XM_Camera::XM_Camera() : pos{0, 0, 0}, target{0, 1.f, 0}, up{0, 1.f, 0}, fovy{45.f}
 {
 	camera_.position = pos;
 	camera_.target = target;
@@ -9,19 +9,19 @@ XM_Camera::Camera() : pos{0, 0, 0}, target{0, 1.f, 0}, up{0, 1.f, 0}, fovy{45.f}
 	cmaera_.projection = CAMERA_PERSPECTIVE;
 }
 
-XM_Camera::Camera(const Vector3 &pos) : pos{pos}, target{0, 1.f, 0}, up{0, 1.f, 0}, 
+XM_Camera::XM_Camera(const Vector3 &pos) : pos{pos}, target{0, 1.f, 0}, up{0, 1.f, 0}, 
 		   fovy{45.f}
 {}
 
-XM_Camera::Camera(const Vector3 &pos, const Vector3 &target) : pos{pos}, target{target}, up{0, 1.f, 0}, 
+XM_Camera::XM_Camera(const Vector3 &pos, const Vector3 &target) : pos{pos}, target{target}, up{0, 1.f, 0}, 
 		   fovy{45.f}
 {}
 
-XM_Camera::Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up) : pos{pos}, target{target}, up{up}, 
+XM_Camera::XM_Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up) : pos{pos}, target{target}, up{up}, 
 		   fovy{45.f}
 {}
 
-XM_Camera::Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up, const double flovy) : pos{pos}, target{target}, up{up}, 
+XM_Camera::XM_Camera(const Vector3 &pos, const Vector3 &target, const Vector3 &up, const double flovy) : pos{pos}, target{target}, up{up}, 
 		   fovy{fovy}
 {}
 
