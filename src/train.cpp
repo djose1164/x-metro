@@ -11,6 +11,16 @@ Train::Train(const std::string &name, const std::string &type,
 	pos = {0, 0, 0};
 }
 
+void Train::update()
+{
+	// Stuff.
+}
+
+void Train::draw()
+{
+	// Stuff.
+}
+
 Train::~Train()
 {
 	std::cout << "Train deleted!";
