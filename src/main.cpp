@@ -23,7 +23,7 @@ int main(void)
 			ClearBackground(BLACK);
 			DrawText(APP_NAME, 52, 80, 32, RED);
 			
-			Vector3 cubePosition = {10.f, 10.f, 10.f};
+			Vector3 cubePosition = {0.f, 0.f, 0.f};
 			//TraceLog(LOG_INFO, "Camera position {%.3f:%.3f:%.3f}", camera_.position.x, camera_.position.y, camera_.position.z);
 			BeginMode3D(camera.get_camera());
 				DrawText("Jose Daniel", 100, 150, 36, RED);
